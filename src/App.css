@@ -1,0 +1,88 @@
+
+#app{
+  background-color: purple;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: all 0.2s cubic-bezier(0, 0, 0.87, 1);
+
+}
+
+
+#quote-box{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   max-width: 800px;
+    width: 98%;
+    max-height: 500px;
+    min-height: 150px;
+    height: auto; 
+    border: 1px solid #36215f;
+    border-radius: 20px;
+    color: #f7f7f7;
+    background:  #6d42c9;
+    transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+button#new-quote, a#tweet-quote{
+    position: absolute;
+      bottom: 25px;
+      left: 25px;
+      background-color: #7a64ad;;
+      border: 1px solid #A689E1;;
+      border-radius: 8px;
+      padding: 8px 12px;
+      text-transform: uppercase;
+      color: rgb(207, 180, 26);
+      font-size: 1em;
+      transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      cursor: pointer;
+}
+button#new-quote:hover,a#tweet-quote:hover{
+  background-color: #3c1e66;
+}
+a#tweet-quote{
+    text-decoration: none;
+    right: 15px;
+    left: auto;
+  }
+  #quote-content{
+    max-height: calc(100% - 140px);
+    height: auto;
+    position: relative;
+    width: calc(100% - 180px);
+    margin: 60px 90px 80px;
+  }
+  
+  #quote-text{
+    font-size: 2em;
+    position: relative;
+  }
+    #quote-text:before{
+      position: absolute;
+      content: '"';
+      font-size: 5em;
+      opacity: 0.2;
+      left: -60px;
+      top: -50px;
+      
+    }
+    #quote-author{
+       
+        text-align: right;
+        font-style: italic;
+        font-size: 1.2em;
+        padding-top: 30px;
+        color:white;
+       
+    }    
+        #quote-author:before{
+          content: "- ";
+    }
+    @media screen and (max-width:480px){
+      #quote-box{
+        font-size: 10px;
+      }
+    }
+  
